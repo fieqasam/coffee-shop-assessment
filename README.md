@@ -52,7 +52,7 @@ Make sure you have the following software installed on your computer:
    </pre>
 
 ## Sample API Endpoints
-All tge API endpoints now require authentication. You need to register/login first to get an access token.
+All the API endpoints now require authentication. You need to register/login first to get an access token.
 
 1. Register User
    <pre>
@@ -139,6 +139,20 @@ All tge API endpoints now require authentication. You need to register/login fir
         }
     }
    </pre>
+
+## Additional Question
+
+1. Extensibility – New Drink
+   To support adding new drinks, create an admin panel page or API endpoint for authorized users to submit drink details (name, type, available sizes, prices). Save these in the drinks table. 
+
+2. Extensibility – New Size
+   Add a new column in the drinks table (e.g., price_short) to store pricing for the new size. Update the getPriceBySize() method, form validations, and API documentation to include the new size option.
+
+3. Hot/Cold Options
+   Add a temperature column to the orders table and a temperature_options field in the drinks table to define available options for each drink. Update order creation logic to validate against allowed temperature values.
+
+4. (Optional) Condiments Add-on
+   Create a condiments table with name and price. Use a pivot table (order_condiment) to link condiments to specific orders. Modify the order creation process to store selected condiments and calculate the total price.
 
 
   
