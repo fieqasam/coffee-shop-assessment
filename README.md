@@ -14,7 +14,7 @@ Make sure you have the following software installed on your computer:
 
 ## Installation Steps
 1. Open your terminal and navigate to the project folder: After unzipping, open your terminal and navigate to the project folder:
-   <pre> cd path/to/coffee-shop-qune-app  </pre>
+   <pre> cd path/to/coffee-shop-qube-app  </pre>
 2. Laravel Setup:
    <pre> composer install  </pre>
    <pre> composer require laravel/sanctum  </pre>
@@ -107,7 +107,7 @@ All the API endpoints now require authentication. You need to register/login fir
    </pre>
 3. Add Orders
    <pre>
-    POST /api/orders
+    POST /api/orders/add-order
     Authorization: Bearer {your_token}
     Content-Type: application/json
     
