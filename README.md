@@ -140,6 +140,5 @@ All tge API endpoints now require authentication. You need to register/login fir
     }
    </pre>
 
-## Additional Questions
 
   
